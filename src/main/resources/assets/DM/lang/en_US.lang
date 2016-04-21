@@ -1,0 +1,7 @@
+#Items
+item.DM.item_test.name=Test Item
+item.DM.item_test.description=I am an item
+
+# Blocks
+tile.DM.block_test.name=Test Block
+tile.DM.block_test.description=I am a block

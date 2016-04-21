@@ -1,0 +1,16 @@
+[
+{
+  "modid": "DM",
+  "name": "Dorito's Mod",
+  "description": "Dorito's Cool mod.",
+  "version": "1.0",
+  "mcversion": "1.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Doritobob"],
+  "credits": "Doritos",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "all": "DM:blocks/block_test",
+        "particle": "blocks/lapis_block"
+    }
+}
