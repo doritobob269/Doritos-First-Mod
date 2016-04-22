@@ -36,11 +36,15 @@ public class DM {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
+		
 	}
 	
 	@EventHandler
     public void init(FMLInitializationEvent event) {
+		DMItem.init();
+		DMBlock.init();
 		proxy.init(event);;
+		
 	}
 	
 	@EventHandler

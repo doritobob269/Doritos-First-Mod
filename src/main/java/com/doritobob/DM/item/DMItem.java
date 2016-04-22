@@ -14,11 +14,11 @@ public class DMItem{
 	//Define Variables
     public static ItemItemTest item_test;
 	
-	public void init() {
+	public static void init() {
 		//Define Items
 		item_test = new ItemItemTest("item_test");
 		
 		//Register Items
-		//GameRegistry.register(item_test);
+		GameRegistry.registerItem(item_test);
 	}
 }

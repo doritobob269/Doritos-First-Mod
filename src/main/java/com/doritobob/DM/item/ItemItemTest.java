@@ -19,6 +19,6 @@ public class ItemItemTest extends Item{
 		
 		super();
 		this.setUnlocalizedName(name);
-		this.setRegistryName("item_test");
+		this.setRegistryName(name);
 	}
 }

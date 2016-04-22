@@ -14,7 +14,7 @@ public class BlockBlockTest extends Block{
 	
 		super(material);
 		this.setUnlocalizedName(name);
-		//this.setRegistryName("block_test");
+		this.setRegistryName(name);
 	}
 	
 }

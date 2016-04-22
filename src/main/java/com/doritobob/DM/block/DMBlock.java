@@ -19,7 +19,7 @@ public class DMBlock{
 	//Define Variables
 	public static BlockBlockTest block_test;
 	
-	@SideOnly(Side.CLIENT)
+	/*@SideOnly(Side.CLIENT)
 	public EnumBlockRenderType getBlockLayer()
 	{
 	    return EnumBlockRenderType.MODEL;
@@ -27,18 +27,20 @@ public class DMBlock{
 	
 	public int getRenderType() {
 	  return 3;
-	}
-	public void init() {
+	}*/
+	
+	public static void init() {
 		//Define Blocks
 		block_test = new BlockBlockTest(Material.ground, "block_test");
 		
 		//Register Blocks
-		GameRegistry.registerBlock(block_test, "block_test");
+		GameRegistry.registerBlock(block_test);
 	}
+	/*
 	public static void registerRenders() {
 		registerRender(block_test);
 	}
-
+    
 	private static void registerRender(Block block) {
 	    // This is currently necessary in order to make your block render properly when it is an item (i.e. in the inventory
 	    //   or in your hand or thrown on the ground).
@@ -50,5 +52,5 @@ public class DMBlock{
 	    ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(ModInfo.MODID + ":" + "block_test", "inventory");
 	    final int DEFAULT_ITEM_SUBTYPE = 0;
 	    ModelLoader.setCustomModelResourceLocation(itemBlockSimple, DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
-	  }
+	  }*/
 }
