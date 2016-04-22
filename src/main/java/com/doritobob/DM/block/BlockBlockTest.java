@@ -13,7 +13,7 @@ public class BlockBlockTest extends Block{
 	public BlockBlockTest(Material material, String name) {
 	
 		super(material);
-		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
+		this.setUnlocalizedName(name);
 		//this.setRegistryName("block_test");
 	}
 	

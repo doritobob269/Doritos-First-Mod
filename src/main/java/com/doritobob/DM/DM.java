@@ -35,17 +35,16 @@ public class DM {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		//Initialize Blocks and Items
-		blocks.init();
-		items.init();
+		proxy.preInit(event);
 	}
 	
 	@EventHandler
     public void init(FMLInitializationEvent event) {
-		proxy.registerRenderers();
+		proxy.init(event);;
 	}
 	
 	@EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+		proxy.postInit(event);
     }
 }

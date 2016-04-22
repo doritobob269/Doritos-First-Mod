@@ -19,15 +19,6 @@ public class DMItem{
 		item_test = new ItemItemTest("item_test");
 		
 		//Register Items
-		GameRegistry.registerItem(item_test, "item_test");
-	}
-	
-	public static void registerRenders() {
-		registerRender(item_test);
-	}
-
-	private static void registerRender(Item item) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(
-				item, 0, new ModelResourceLocation(ModInfo.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		//GameRegistry.register(item_test);
 	}
 }

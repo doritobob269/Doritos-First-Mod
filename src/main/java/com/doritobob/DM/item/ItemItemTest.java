@@ -18,7 +18,7 @@ public class ItemItemTest extends Item{
 	public ItemItemTest(String name){
 		
 		super();
-		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
-		//this.setRegistryName("item_test");
+		this.setUnlocalizedName(name);
+		this.setRegistryName("item_test");
 	}
 }
