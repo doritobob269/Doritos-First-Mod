@@ -21,5 +21,6 @@ public class ItemItemTest extends Item{
 		super();
 		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
 		this.setRegistryName(name);
+		//this.setMaxStackSize(3);
 	}
 }

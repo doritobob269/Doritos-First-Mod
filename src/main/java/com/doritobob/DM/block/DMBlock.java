@@ -26,6 +26,7 @@ public class dmBlock{
 		//Register Blocks
 		GameRegistry.registerBlock(block_test);
 		
+		
 	}
 	
 	/*

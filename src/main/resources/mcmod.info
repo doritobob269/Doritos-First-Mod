@@ -1,14 +1,14 @@
 [
 {
   "modid": "dm",
-  "name": "dm",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "name": "DoritoMod",
+  "description": "My First Mod",
+  "version": "1.0",
+  "mcversion": "1.9",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Doritobob"],
+  "credits": "All the previous modders I've contacted for source code support",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

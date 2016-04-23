@@ -1,12 +1,7 @@
 {
-    "parent": "block/cube",
+    "parent": "block/cube_all",
     "textures": {
-		"up": "dm:blocks/block_test",
-		"down": "dm:blocks/block_test",
-		"north": "dm:blocks/block_test",
-		"east": "dm:blocks/block_test",
-		"south": "dm:blocks/block_test",
-		"west": "dm:blocks/block_test",
+		"all": "dm:blocks/block_test",
         "particle": "dm:blocks/block_test"
     }
 }

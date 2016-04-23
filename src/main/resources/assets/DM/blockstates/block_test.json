@@ -1,5 +1,22 @@
 {
-    "variants": {
-        "normal": { "model": "dm:block_test" }
-    }
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "dm:blocks/block_test",
+      "particle": "dm:blocks/block_test"
+    },
+    "model": "minecraft:cube",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{
+	"model" : "dm:block_test"
+	}],
+	
+    "inventory": [{
+	  
+    }]
+    
+  }
 }
+
