@@ -15,8 +15,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 public class dmItem{
 	//Define Variables
     public static ItemItemTest item_test;
-    public static BlockBlockTest block_test;
-	
+
 	public static void init() {
 		//Define Items
 		item_test = new ItemItemTest("item_test");

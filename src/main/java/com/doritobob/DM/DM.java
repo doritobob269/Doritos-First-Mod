@@ -5,6 +5,7 @@ import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.client.ClientProxy;
 import com.doritobob.dm.item.dmItem;
+import com.doritobob.dm.dmCreativeTabs;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -26,6 +27,7 @@ public class dm {
 	
 	public static final dmBlock blocks = new dmBlock();
     public static final dmItem items = new dmItem();
+    public static final dmCreativeTabs tabGeneral = new dmCreativeTabs();
     
 	@Instance
 	public static dm instance;
