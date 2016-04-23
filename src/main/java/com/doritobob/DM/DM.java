@@ -1,10 +1,10 @@
-package com.doritobob.DM;
+package com.doritobob.dm;
 
-import com.doritobob.DM.ref.ModInfo;
+import com.doritobob.dm.ref.ModInfo;
 
-import com.doritobob.DM.block.DMBlock;
-import com.doritobob.DM.client.ClientProxy;
-import com.doritobob.DM.item.DMItem;
+import com.doritobob.dm.block.dmBlock;
+import com.doritobob.dm.client.ClientProxy;
+import com.doritobob.dm.item.dmItem;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -22,13 +22,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 
 @Mod(modid = ModInfo.MODID, name = ModInfo.NAME) 
-public class DM {
+public class dm {
 	
-	public static final DMBlock blocks = new DMBlock();
-    public static final DMItem items = new DMItem();
+	public static final dmBlock blocks = new dmBlock();
+    public static final dmItem items = new dmItem();
     
 	@Instance
-	public static DM instance;
+	public static dm instance;
 	
 	@SidedProxy(serverSide = ModInfo.SOURCEPATH + ".CommonProxy", clientSide = ModInfo.SOURCEPATH + ".client.ClientProxy")
 	public static CommonProxy proxy;
@@ -41,8 +41,9 @@ public class DM {
 	
 	@EventHandler
     public void init(FMLInitializationEvent event) {
-		DMItem.init();
-		DMBlock.init();
+		dmItem.init();
+		dmBlock.init();
+		
 		proxy.init(event);;
 		
 	}

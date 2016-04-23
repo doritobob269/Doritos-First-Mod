@@ -1,7 +1,7 @@
-package com.doritobob.DM.renderers;
+package com.doritobob.dm.renderers;
 
-import com.doritobob.DM.ref.ModInfo;
-import com.doritobob.DM.item.DMItem;
+import com.doritobob.dm.ref.ModInfo;
+import com.doritobob.dm.item.dmItem;
 
 import net.minecraft.item.Item;
 import net.minecraft.client.Minecraft;
@@ -10,11 +10,12 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 public class ItemRenderRegister {
 	
 	public static void registerItemRenderer(){
-        registerRender(DMItem.item_test);
+        registerRenderer(dmItem.item_test);
+        //registerRenderer(dmItem.item_block_test);
     }
 
-	private static void registerRender(Item item) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(ModInfo.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+	private static void registerRenderer(Item item) {
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getUnlocalizedName().substring(5), "inventory"));
     }
 
 }

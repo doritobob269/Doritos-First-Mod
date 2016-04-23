@@ -1,6 +1,7 @@
-package com.doritobob.DM.item;
+package com.doritobob.dm.item;
 
-import com.doritobob.DM.ref.ModInfo;
+import com.doritobob.dm.ref.ModInfo;
+
 import net.minecraft.item.Item;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemRenderer;
@@ -18,7 +19,7 @@ public class ItemItemTest extends Item{
 	public ItemItemTest(String name){
 		
 		super();
-		this.setUnlocalizedName(name);
+		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
 		this.setRegistryName(name);
 	}
 }

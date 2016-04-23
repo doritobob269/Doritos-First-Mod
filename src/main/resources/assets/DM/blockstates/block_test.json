@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "DM:block_test" }
+        "normal": { "model": "dm:block_test" }
     }
 }

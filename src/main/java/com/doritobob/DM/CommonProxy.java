@@ -1,7 +1,7 @@
-package com.doritobob.DM;
+package com.doritobob.dm;
 
-import com.doritobob.DM.block.DMBlock;
-import com.doritobob.DM.item.DMItem;
+import com.doritobob.dm.block.dmBlock;
+import com.doritobob.dm.item.dmItem;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

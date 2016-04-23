@@ -1,7 +1,7 @@
-package com.doritobob.DM.block;
+package com.doritobob.dm.block;
 
-import com.doritobob.DM.ref.ModInfo;
-import com.doritobob.DM.block.BlockBlockTest;
+import com.doritobob.dm.ref.ModInfo;
+import com.doritobob.dm.block.BlockBlockTest;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -15,19 +15,9 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.util.EnumBlockRenderType;;
 
-public class DMBlock{
+public class dmBlock{
 	//Define Variables
 	public static BlockBlockTest block_test;
-	
-	/*@SideOnly(Side.CLIENT)
-	public EnumBlockRenderType getBlockLayer()
-	{
-	    return EnumBlockRenderType.MODEL;
-	}
-	
-	public int getRenderType() {
-	  return 3;
-	}*/
 	
 	public static void init() {
 		//Define Blocks
@@ -35,12 +25,13 @@ public class DMBlock{
 		
 		//Register Blocks
 		GameRegistry.registerBlock(block_test);
+		
 	}
+	
 	/*
 	public static void registerRenders() {
 		registerRender(block_test);
 	}
-    
 	private static void registerRender(Block block) {
 	    // This is currently necessary in order to make your block render properly when it is an item (i.e. in the inventory
 	    //   or in your hand or thrown on the ground).
@@ -52,5 +43,14 @@ public class DMBlock{
 	    ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(ModInfo.MODID + ":" + "block_test", "inventory");
 	    final int DEFAULT_ITEM_SUBTYPE = 0;
 	    ModelLoader.setCustomModelResourceLocation(itemBlockSimple, DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);
-	  }*/
+	}
+	@SideOnly(Side.CLIENT)
+	public EnumBlockRenderType getBlockLayer()
+	{
+	    return EnumBlockRenderType.MODEL;
+	}
+	public int getRenderType() {
+	  return 3;
+	}*/
+	
 }

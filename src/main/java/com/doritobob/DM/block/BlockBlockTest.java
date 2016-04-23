@@ -1,7 +1,7 @@
-package com.doritobob.DM.block;
+package com.doritobob.dm.block;
 
-import com.doritobob.DM.ref.ModInfo;
-import com.doritobob.DM.block.DMBlock;
+import com.doritobob.dm.ref.ModInfo;
+import com.doritobob.dm.block.dmBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -13,7 +13,7 @@ public class BlockBlockTest extends Block{
 	public BlockBlockTest(Material material, String name) {
 	
 		super(material);
-		this.setUnlocalizedName(name);
+		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
 		this.setRegistryName(name);
 	}
 	

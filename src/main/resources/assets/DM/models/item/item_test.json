@@ -1,17 +1,18 @@
+{
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "DM:items/item_test"
+    "layer0": "dm:items/item_test"
   },
   "display": {
     "thirdperson": {
-      "rotation": [ -90, 0, 0 ],
+      "rotation": [ 0, 0, 0 ],
       "translation": [ 0, 1, -3 ],
-      "scale": [ 0.55, 0.55, 0.55 ]
+      "scale": [ 0.1, 0.1, 0.1 ]
     },
     "firstperson": {
-      "rotation": [ 0, -135, 25 ],
+      "rotation": [ 0, 0, 0 ],
       "translation": [ 0, 4, 2 ],
-      "scale": [ 1.7, 1.7, 1.7 ]
+      "scale": [ 1.5, 1.5, 1.5 ]
     }
   }
 }

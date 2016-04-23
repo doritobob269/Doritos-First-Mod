@@ -1,22 +1,26 @@
-package com.doritobob.DM.item;
+package com.doritobob.dm.item;
 
-import com.doritobob.DM.ref.ModInfo;
-import com.doritobob.DM.item.ItemItemTest;
+import com.doritobob.dm.ref.ModInfo;
+import com.doritobob.dm.block.BlockBlockTest;
+import com.doritobob.dm.item.ItemItemTest;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+//import net.minecraft.item.Item.getItemFromBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
-public class DMItem{
+public class dmItem{
 	//Define Variables
     public static ItemItemTest item_test;
+    public static BlockBlockTest block_test;
 	
 	public static void init() {
 		//Define Items
 		item_test = new ItemItemTest("item_test");
+		//Item item_block_test = new Item.getItemFromBlock(block_test);
 		
 		//Register Items
 		GameRegistry.registerItem(item_test);

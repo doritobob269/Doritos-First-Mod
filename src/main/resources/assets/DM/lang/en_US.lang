@@ -1,7 +1,7 @@
 #Items
-item.item_test.name=Test Item
-item.item_test.description=I am an item
+item.dm:item_test.name=Test Item
+item.dm:item_test.description=I am an item
 
 # Blocks
-tile.block_test.name=Test Block
-tile.block_test.description=I am a block
+tile.dm:block_test.name=Test Block
+tile.dm:block_test.description=I am a block
