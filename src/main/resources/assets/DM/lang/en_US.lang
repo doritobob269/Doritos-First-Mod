@@ -1,5 +1,6 @@
 #Items
 item.dm:item_test.name=§3Test Item
+item.dm:entity_test.name=Spawn Entity Test
 
 #Blocks
 tile.dm:block_test.name=§3Test Block

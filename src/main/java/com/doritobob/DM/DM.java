@@ -28,6 +28,7 @@ public class dm {
 	public static final dmBlock blocks = new dmBlock();
     public static final dmItem items = new dmItem();
     public static final dmCreativeTabs tabGeneral = new dmCreativeTabs();
+
     
 	@Instance
 	public static dm instance;

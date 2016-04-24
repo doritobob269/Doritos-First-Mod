@@ -3,6 +3,7 @@ package com.doritobob.dm.renderers;
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.item.dmItem;
+import com.doritobob.dm.item.SpawnEggs.dmItemSpawnEggs;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -16,6 +17,7 @@ public class ItemRenderRegister {
 	
 	public static void registerItemRenderer(){
         registerRendererItem(dmItem.item_test);
+        registerRendererItem(dmItemSpawnEggs.item_spawnegg_entity_test);
         registerRendererBlock(dmBlock.block_test);
     }
 

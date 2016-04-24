@@ -1,5 +1,6 @@
 package com.doritobob.dm.item;
 
+import com.doritobob.dm.dm;
 import com.doritobob.dm.ref.ModInfo;
 
 import net.minecraft.item.Item;
