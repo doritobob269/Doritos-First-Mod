@@ -1,4 +1,4 @@
-package com.doritobob.dm.item.SpawnEggs;
+package com.doritobob.dm.item.spawneggs;
 
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.dmCreativeTabs;

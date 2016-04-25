@@ -3,7 +3,7 @@ package com.doritobob.dm.renderers;
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.item.dmItem;
-import com.doritobob.dm.item.SpawnEggs.dmItemSpawnEggs;
+import com.doritobob.dm.item.spawneggs.dmItemSpawnEggs;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;

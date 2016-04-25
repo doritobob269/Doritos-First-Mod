@@ -20,7 +20,7 @@ public class ClientProxy extends CommonProxy{
     public void init(FMLInitializationEvent event){
         super.init(event);
         ItemRenderRegister.registerItemRenderer();
-        //EntityRenderRegister.registerEntityRenderer();
+        EntityRenderRegister.registerEntityRenderer();
         
     }
     @Override

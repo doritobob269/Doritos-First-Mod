@@ -3,7 +3,7 @@ package com.doritobob.dm.item;
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.block.BlockBlockTest;
 import com.doritobob.dm.item.ItemItemTest;
-import com.doritobob.dm.item.SpawnEggs.dmItemSpawnEggs;
+import com.doritobob.dm.item.spawneggs.dmItemSpawnEggs;
 
 import net.minecraft.item.Item;
 import net.minecraft.block.Block;

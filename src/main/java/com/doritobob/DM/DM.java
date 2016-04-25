@@ -4,6 +4,7 @@ import com.doritobob.dm.ref.ModInfo;
 
 import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.client.ClientProxy;
+import com.doritobob.dm.entity.dmEntity;
 import com.doritobob.dm.item.dmItem;
 import com.doritobob.dm.dmCreativeTabs;
 
@@ -46,6 +47,7 @@ public class dm {
     public void init(FMLInitializationEvent event) {
 		dmItem.init();
 		dmBlock.init();
+		dmEntity.init(overworld);
 		
 		proxy.init(event);;
 		

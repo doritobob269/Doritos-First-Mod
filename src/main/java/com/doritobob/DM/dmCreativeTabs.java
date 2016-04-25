@@ -6,7 +6,7 @@ import java.util.List;
 
 import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.item.dmItem;
-import com.doritobob.dm.item.SpawnEggs.dmItemSpawnEggs;
+import com.doritobob.dm.item.spawneggs.dmItemSpawnEggs;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
