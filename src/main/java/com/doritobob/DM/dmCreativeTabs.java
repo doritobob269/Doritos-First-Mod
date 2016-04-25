@@ -42,7 +42,7 @@ public class dmCreativeTabs extends CreativeTabs{
         public void displayAllRelevantItems(List list) {
     		this.list = list;
     		addItem(dmItem.item_test);
-    		addItem(dmItemSpawnEggs.item_spawnegg_entity_test);
+    		//addItem(dmItemSpawnEggs.item_spawnegg_entity_test);
     		addBlock(dmBlock.block_test);
         }
         

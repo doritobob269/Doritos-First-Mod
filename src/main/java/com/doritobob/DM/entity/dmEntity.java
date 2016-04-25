@@ -14,14 +14,16 @@ public class dmEntity {
 	
 	public static EntityEntityTest entity_test;
 	
-	public static void init(World worldIn){
-		entity_test = new EntityEntityTest(worldIn);
+	public static void init(){
+		//entity_test = new EntityEntityTest(worldIn);
 		
 		//RenderingRegistry.registerEntityRenderingHandler(entity_test.getClass(), new RenderEntityTest(Minecraft.getMinecraft().getRenderManager(), new ModelBiped(), 0));
 		
 		int id = 0;
 		
-        EntityRegistry.registerModEntity(entity_test.getClass(), "entity_test", id++, dm.instance, 64, 20, true);
+		//EntityRegistry.registerGlobalEntityID(entity_test.getClass(), "entity_test", id++);
+		
+        EntityRegistry.registerModEntity(EntityEntityTest.class, "entity_test", id++, dm.instance, 64, 20, true, 0x0000ff, 0x00ff00);
 	}
 
 }

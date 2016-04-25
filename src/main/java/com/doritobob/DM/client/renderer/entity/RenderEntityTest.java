@@ -5,6 +5,7 @@ import com.doritobob.dm.entity.EntityEntityTest;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.model.ModelCow;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -18,6 +19,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class RenderEntityTest extends RenderLiving{
 	
 	protected ResourceLocation entityTestTextures;
+	
+	public RenderEntityTest(RenderManager renderManagerIn)
+	{
+		super(renderManagerIn, new ModelCow(), 0.5F);
+	}
 	
 	public RenderEntityTest(RenderManager renderManagerIn, ModelBiped modelBipedIn, float shadowSize) {
 		super(renderManagerIn, modelBipedIn, shadowSize);

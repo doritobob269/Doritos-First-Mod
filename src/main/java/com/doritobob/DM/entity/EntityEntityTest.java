@@ -33,17 +33,29 @@ public class EntityEntityTest extends EntityAnimal{
         super(world);
         setSize(1, 2);
         preventEntitySpawning = true;
-        this.tasks.addTask(0, new EntityAIWander(this, 0.5D));
-        this.tasks.addTask(1, new EntityAIPanic(this, 1.0D));
+        this.tasks.addTask(0, new EntityAISwimming(this));
+        this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
+        this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
         this.tasks.addTask(2, new EntityAITempt(this, 0.7D, dmItem.item_test, false));
-        this.tasks.addTask(3, new EntityAIFollowParent(this, 1.0D));
+        this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
+        this.tasks.addTask(5, new EntityAIWander(this, 1.0D));
+        this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+        this.tasks.addTask(7, new EntityAILookIdle(this));
     }
-
+	
     public EntityEntityTest(World world, double x, double y, double z){
         this(world);
         setPosition(x, y, z);
     }
-
+    
+    @Override
+	protected void applyEntityAttributes()
+    {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.20000000298023224D);
+    }
+    
     public boolean isAIEnabled(){
         return true;
     }

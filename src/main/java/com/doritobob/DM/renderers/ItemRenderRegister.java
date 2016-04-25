@@ -17,7 +17,7 @@ public class ItemRenderRegister {
 	
 	public static void registerItemRenderer(){
         registerRendererItem(dmItem.item_test);
-        registerRendererItem(dmItemSpawnEggs.item_spawnegg_entity_test);
+        //registerRendererItem(dmItemSpawnEggs.item_spawnegg_entity_test);
         registerRendererBlock(dmBlock.block_test);
     }
 

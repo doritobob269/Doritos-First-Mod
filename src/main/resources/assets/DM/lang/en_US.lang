@@ -1,6 +1,5 @@
 #Items
 item.dm:item_test.name=§3Test Item
-item.dm:entity_test.name=Spawn Entity Test
 
 #Blocks
 tile.dm:block_test.name=§3Test Block
@@ -11,3 +10,6 @@ tooltip.dm:block_test.desc=§oI am a block
 
 #Creative Tabs
 itemGroup.dm:general=§1Dorito's Mod
+
+#Entities
+entity.dm.entity_test.name=Entity Test

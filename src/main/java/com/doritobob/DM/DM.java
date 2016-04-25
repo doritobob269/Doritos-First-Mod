@@ -39,6 +39,7 @@ public class dm {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		dmEntity.init();
 		proxy.preInit(event);
 		
 	}
@@ -47,7 +48,6 @@ public class dm {
     public void init(FMLInitializationEvent event) {
 		dmItem.init();
 		dmBlock.init();
-		dmEntity.init(overworld);
 		
 		proxy.init(event);;
 		
