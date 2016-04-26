@@ -3,6 +3,7 @@ package com.doritobob.dm.entity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.doritobob.dm.client.renderer.entity.RenderEntityTest;
 import com.doritobob.dm.item.dmItem;
 import com.doritobob.dm.item.spawneggs.dmItemSpawnEggs;
 import com.doritobob.dm.ref.ModInfo;
@@ -79,7 +80,7 @@ public class EntityEntityTest extends EntityAnimal {
 	
 	protected void applyTexture()
 	{
-		this.setTextureType(new ResourceLocation(ModInfo.MODID + ":textures/entity/entity_test/entity_test.png"));
+		this.setTextureType(RenderEntityTest.textureLocation);
 	}
 	
 	public ResourceLocation getTextureType()
