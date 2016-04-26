@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
-public class ModelEntityTest extends ModelQuadruped
+public class ModelDoritoPet extends ModelQuadruped
 {
     /** The head model for the iron golem. */
     public ModelRenderer head;
@@ -35,17 +35,17 @@ public class ModelEntityTest extends ModelQuadruped
     protected float childYOffset = 8.0F;
     protected float childZOffset = 4.0F;
 
-    public ModelEntityTest(){
+    public ModelDoritoPet(){
     	
         this(3);
     }
 
-    public ModelEntityTest(int height){
+    public ModelDoritoPet(int height){
     	
         this(height, 0.0F);
     }
 
-    public ModelEntityTest(int height, float scale){
+    public ModelDoritoPet(int height, float scale){
     	
     	super(height, scale);
     	this.head = new ModelRenderer(this, 0, 0);

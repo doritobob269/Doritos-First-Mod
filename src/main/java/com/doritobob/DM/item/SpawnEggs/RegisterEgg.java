@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.FMLLog;
 
 public class RegisterEgg {
 	
-	public void registerEgg(Class<? extends EntityAnimal> entityClass, String name, int primary, int secondary){
+	public RegisterEgg(Class<? extends EntityAnimal> entityClass, String name, int primary, int secondary){
         if (EntityList.classToStringMapping.containsKey(entityClass))
         {
             //String name = EntityList.classToStringMapping.get(entityClass);

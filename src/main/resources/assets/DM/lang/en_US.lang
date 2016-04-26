@@ -13,3 +13,4 @@ itemGroup.dm:general=§1Dorito's Mod
 
 #Entities
 entity.dm.entity_test.name=Entity Test
+entity.dm.dorito_pet.name=Dorito Pet

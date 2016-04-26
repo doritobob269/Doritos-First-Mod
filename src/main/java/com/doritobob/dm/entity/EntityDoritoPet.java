@@ -3,20 +3,11 @@ package com.doritobob.dm.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.doritobob.dm.client.renderer.entity.RenderEntityTest;
+import com.doritobob.dm.client.renderer.entity.RenderDoritoPet;
 import com.doritobob.dm.item.dmItem;
-import com.doritobob.dm.item.spawneggs.dmItemSpawnEggs;
-import com.doritobob.dm.ref.ModInfo;
-import com.sun.prism.Material;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.EntityCreature;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIFollowParent;
 import net.minecraft.entity.ai.EntityAILookIdle;
@@ -26,46 +17,30 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAITempt;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
-import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.passive.EntityAnimal;
-import net.minecraft.entity.passive.IAnimals;
+import net.minecraft.entity.passive.EntityTameable;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.WeightedRandomChestContent;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.village.Village;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
-import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.entity.RenderLiving;
-import net.minecraft.client.renderer.entity.RenderManager;
 
-public class EntityEntityTest extends EntityAnimal {
-//extends EntityAnimal{
-	
+public class EntityDoritoPet extends EntityAnimal{
 	protected ResourceLocation textureLoc;
 	private int inLove;
     private EntityPlayer playerInLove;
 	
-	public EntityEntityTest(World world){
+	public EntityDoritoPet(World world){
         super(world);
         
-        this.setSize(1, 2);
+        this.setSize(0.9F, 0.9F);
         preventEntitySpawning = true;
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
@@ -80,7 +55,7 @@ public class EntityEntityTest extends EntityAnimal {
 	
 	protected void applyTexture()
 	{
-		this.setTextureType(RenderEntityTest.textureLocation);
+		this.setTextureType(RenderDoritoPet.textureLocation);
 	}
 	
 	public ResourceLocation getTextureType()
@@ -93,7 +68,7 @@ public class EntityEntityTest extends EntityAnimal {
 		this.textureLoc = texturelocation;
 	}
 	
-    public EntityEntityTest(World world, double x, double y, double z){
+    public EntityDoritoPet(World world, double x, double y, double z){
         this(world);
         setPosition(x, y, z);
     }
@@ -105,6 +80,9 @@ public class EntityEntityTest extends EntityAnimal {
         tagCompound.setInteger("InLove", this.inLove);
     }
     
+    public boolean canBeLeashed(){
+    	return true;
+    }
     @Override
     public double getYOffset()
     {
@@ -246,9 +224,9 @@ public class EntityEntityTest extends EntityAnimal {
     }
     
     @Override
-    public EntityEntityTest createChild(EntityAgeable entity) {
+    public EntityDoritoPet createChild(EntityAgeable ageable) {
         //return null;
-        return new EntityEntityTest(worldObj);
+        return new EntityDoritoPet(this.worldObj);
     }
 	
 
@@ -329,3 +307,4 @@ public class EntityEntityTest extends EntityAnimal {
 	
 
 }
+

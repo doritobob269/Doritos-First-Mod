@@ -2,6 +2,7 @@ package com.doritobob.dm.item.spawneggs;
 
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.entity.EntityEntityTest;
+import com.doritobob.dm.item.spawneggs.RegisterEgg;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
@@ -20,11 +21,12 @@ import net.minecraft.world.World;
 
 public class SpawnEggEntityTest extends ItemMonsterPlacer{
 	
-	public SpawnEggEntityTest(Class entityClass, String name, int primary, int secondary){
+	public SpawnEggEntityTest(Class<? extends EntityAnimal> entityClass, String name, int eggBackground, int eggSpots){
 		
 		super();
 		this.setUnlocalizedName(ModInfo.MODID + ":" + name);
 		this.setRegistryName(name);
+		//RegisterEgg.RegisterEgg(entityClass, name, eggBackground, eggSpots);
 		
 	}
 
