@@ -1,9 +1,9 @@
 package com.doritobob.dm.renderers;
 
 import com.doritobob.dm.ref.ModInfo;
+import com.doritobob.dm.client.renderer.entity.RenderEntityTest;
 import com.doritobob.dm.entity.EntityEntityTest;
 import com.doritobob.dm.entity.dmEntity;
-import com.doritobob.dm.render.RenderEntityTest;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
@@ -33,7 +33,7 @@ public class EntityRenderRegister{
 				
 				@Override
 				public Render<? super EntityEntityTest> createRenderFor(RenderManager manager) {
-					return new com.doritobob.dm.client.renderer.entity.RenderEntityTest(manager);
+					return new RenderEntityTest(manager);
 				}
 			});
 	}
