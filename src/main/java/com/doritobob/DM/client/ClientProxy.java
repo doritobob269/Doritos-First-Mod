@@ -1,9 +1,9 @@
 package com.doritobob.dm.client;
 
 import com.doritobob.dm.CommonProxy;
+import com.doritobob.dm.client.renderer.EntityRenderRegister;
+import com.doritobob.dm.client.renderer.ItemRenderRegister;
 import com.doritobob.dm.item.dmItem;
-import com.doritobob.dm.renderers.EntityRenderRegister;
-import com.doritobob.dm.renderers.ItemRenderRegister;
 import com.doritobob.dm.entity.EntityEntityTest;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;

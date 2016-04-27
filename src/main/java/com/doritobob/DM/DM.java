@@ -6,6 +6,7 @@ import com.doritobob.dm.block.dmBlock;
 import com.doritobob.dm.client.ClientProxy;
 import com.doritobob.dm.entity.dmEntity;
 import com.doritobob.dm.item.dmItem;
+import com.doritobob.dm.recipes.dmRecipe;
 import com.doritobob.dm.dmCreativeTabs;
 
 import net.minecraft.block.Block;
@@ -55,6 +56,7 @@ public class dm {
 	
 	@EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+		dmRecipe.init();
 		proxy.postInit(event);
     }
 }

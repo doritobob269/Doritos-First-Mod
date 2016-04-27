@@ -19,7 +19,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class SpawnEggEntityTest extends ItemMonsterPlacer{
+public class SpawnEggEntityTest extends RegisterEgg{
 	
 	public SpawnEggEntityTest(Class<? extends EntityAnimal> entityClass, String name, int eggBackground, int eggSpots){
 		
@@ -29,5 +29,6 @@ public class SpawnEggEntityTest extends ItemMonsterPlacer{
 		//RegisterEgg.RegisterEgg(entityClass, name, eggBackground, eggSpots);
 		
 	}
+	
 
 }

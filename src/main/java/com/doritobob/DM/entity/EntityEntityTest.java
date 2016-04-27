@@ -67,14 +67,6 @@ public class EntityEntityTest extends EntityAnimal {
         
         this.setSize(1, 2);
         preventEntitySpawning = true;
-        this.tasks.addTask(0, new EntityAISwimming(this));
-        this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
-        this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
-        this.tasks.addTask(2, new EntityAITempt(this, 1.25D, dmItem.item_test, false));
-        this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
-        this.tasks.addTask(5, new EntityAIWander(this, 1.0D));
-        this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-        this.tasks.addTask(7, new EntityAILookIdle(this));
         
     }
 	
@@ -96,6 +88,27 @@ public class EntityEntityTest extends EntityAnimal {
     public EntityEntityTest(World world, double x, double y, double z){
         this(world);
         setPosition(x, y, z);
+    }
+    
+    @Override
+	protected void applyEntityAttributes()
+    {
+    	super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.20000000298023224D);
+    }
+    
+    @Override
+    protected void initEntityAI(){
+    	this.tasks.addTask(0, new EntityAISwimming(this));
+        this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
+        this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
+        this.tasks.addTask(2, new EntityAITempt(this, 1.25D, dmItem.item_dorito, false));
+        this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
+        this.tasks.addTask(5, new EntityAIWander(this, 1.0D));
+        this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+        this.tasks.addTask(7, new EntityAILookIdle(this));
+        
     }
     
     @Override
@@ -121,7 +134,7 @@ public class EntityEntityTest extends EntityAnimal {
     @Override
     public boolean isBreedingItem(ItemStack stack)
     {
-        return stack == null ? false : stack.getItem() == dmItem.item_test;
+        return stack == null ? false : stack.getItem() == dmItem.item_dorito;
     }
     
     @Override
@@ -155,6 +168,7 @@ public class EntityEntityTest extends EntityAnimal {
         this.worldObj.setEntityState(this, (byte)18);
     }
     
+    @Override
     public EntityPlayer getPlayerInLove()
     {
         return this.playerInLove;
@@ -233,14 +247,6 @@ public class EntityEntityTest extends EntityAnimal {
         }
     }
     
-    @Override
-	protected void applyEntityAttributes()
-    {
-    	super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.20000000298023224D);
-    }
-    
     public boolean isAIEnabled(){
         return true;
     }
@@ -276,7 +282,7 @@ public class EntityEntityTest extends EntityAnimal {
 		//Use thus as an example to drop items on death
 		//addDropEntry(drops, rand.nextBoolean() ? Blocks.yellow_flower : Blocks.red_flower, 0, 1, 2, 65);
 		//Items.redstone, 0, 1, 1, 20 + lootingLevel * 10);
-		addDropEntry(drops, dmItem.item_test, 0, 1, 1, 100);
+		addDropEntry(drops, dmItem.item_dorito, 0, 1, 1, 100);
 
 		this.addMobDrops(drops, recentlyHit, lootingLevel);
 

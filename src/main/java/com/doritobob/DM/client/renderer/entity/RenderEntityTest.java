@@ -1,8 +1,8 @@
 package com.doritobob.dm.client.renderer.entity;
 
 import com.doritobob.dm.ref.ModInfo;
-import com.doritobob.dm.renders.ModelDoritoPet;
 import com.doritobob.dm.entity.EntityEntityTest;
+import com.doritobob.dm.models.ModelDoritoPet;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBiped;
