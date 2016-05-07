@@ -1,0 +1,43 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "forge:fluid"
+    },
+    "variants": {
+		"level=8": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+        "level=7": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=6": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=5": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=4": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=3": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=2": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=1": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }],
+		
+		"level=0": [{
+            "custom": { "fluid": "dm:blocks/block_dorito" }
+        }]
+    }
+}

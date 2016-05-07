@@ -1,6 +1,6 @@
 package com.doritobob.dm.models;
 
-import com.doritobob.dm.entity.EntityEntityTest;
+import com.doritobob.dm.entity.EntityDoritobob;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelQuadruped;

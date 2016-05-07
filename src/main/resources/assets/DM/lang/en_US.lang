@@ -12,5 +12,5 @@ block.dm:block_dorito.desc=§oI am a block
 itemGroup.dm:general=§1Dorito's Mod
 
 #Entities
-entity.dm.entity_test.name=§3Entity Test
+entity.dm.doritobob.name=§3Doritobob
 entity.dm.dorito_pet.name=§3Dorito Pet

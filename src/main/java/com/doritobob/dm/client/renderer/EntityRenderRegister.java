@@ -2,9 +2,9 @@ package com.doritobob.dm.client.renderer;
 
 import com.doritobob.dm.ref.ModInfo;
 import com.doritobob.dm.client.renderer.entity.RenderDoritoPet;
-import com.doritobob.dm.client.renderer.entity.RenderEntityTest;
+import com.doritobob.dm.client.renderer.entity.RenderDoritobob;
 import com.doritobob.dm.entity.EntityDoritoPet;
-import com.doritobob.dm.entity.EntityEntityTest;
+import com.doritobob.dm.entity.EntityDoritobob;
 import com.doritobob.dm.entity.dmEntity;
 
 import net.minecraft.client.Minecraft;
@@ -28,15 +28,15 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class EntityRenderRegister{
 
 	public static void registerEntityRenderer(){
-		registerEntityTest(EntityEntityTest.class);
+		registerEntityTest(EntityDoritobob.class);
 		registerDoritoPet(EntityDoritoPet.class);
 	}
 	
-	private static void registerEntityTest(Class<? extends EntityEntityTest> mob){
-		RenderingRegistry.registerEntityRenderingHandler(mob, new IRenderFactory<EntityEntityTest>() {
+	private static void registerEntityTest(Class<? extends EntityDoritobob> mob){
+		RenderingRegistry.registerEntityRenderingHandler(mob, new IRenderFactory<EntityDoritobob>() {
 			@Override
-			public Render<? super EntityEntityTest> createRenderFor(RenderManager manager) {
-				return new RenderEntityTest(manager);
+			public Render<? super EntityDoritobob> createRenderFor(RenderManager manager) {
+				return new RenderDoritobob(manager);
 			}
 		});
 	}
